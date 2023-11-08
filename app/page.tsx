@@ -1,9 +1,26 @@
 import Image from "next/image";
+import Footer from "./components/Footer";
+import HeroInfo from "./components/HeroInfo";
+import ProjectsSection from "./components/ProjectsSection";
+import SocialContact from "./components/SocialContact";
+import TechStackInfo from "./components/TechStackInfo";
+import ExperienceInfo from "./components/ExperienceInfo";
+import Header from "./components/Header";
+import SideNavBar from "./components/SideNavBar";
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen  bg-gray-400 flex-col items-center justify-between p-2'>
-      <h1 className='text-3xl text-center'>Portfolio Website</h1>
-    </main>
+    <div className='container relative mx-auto max-w-screen-xl'>
+      <div className=''>
+        {/* <SideNavBar /> */}
+        <Header />
+        <HeroInfo />
+        <ProjectsSection />
+        <TechStackInfo />
+        {/* <ExperienceInfo /> */}
+        <SocialContact />
+        <Footer />
+      </div>
+    </div>
   );
 }
