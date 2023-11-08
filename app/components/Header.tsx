@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import DownloadCVButton from "./DownloadCVButton";
+import { NavBar } from "./NavBar";
 
 export default function Header() {
   // const navDiv = document.querySelector("nav");
@@ -20,7 +21,7 @@ export default function Header() {
     <div className='container mx-auto max-w-screen-xl lg:p-4 flex justify-between items-center p-2 '>
       {/* <DownloadCVButton /> */}
       <h1 className='text-2xl sm:text-3xl'> &lt;Aj&gt;</h1>
-      
+      <NavBar />
 
       {/* Mobile Menu Buttons*/}
       <div className=' lg:hidden space-y-2 cursor-pointer'>

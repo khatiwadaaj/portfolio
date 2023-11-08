@@ -3,7 +3,7 @@ import React from "react";
 import ProjectCardSingle from "./ProjectCardSingle";
 import TTSnapImage from "../../public/images/ttsnap.png";
 import JOTImage from "../../public/images/jot.png";
-import ExpressImage from "../../public/images/NodeExpress.jpeg";
+import ExpressImage from "../../public/images/nodeexpress.jpeg";
 
 export default function ProjectsSection() {
   const projectDetails = [
