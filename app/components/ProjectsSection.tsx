@@ -9,34 +9,35 @@ export default function ProjectsSection() {
   const projectDetails = [
     {
       id: 1,
-      title: "TTSnap Downloader",
-      desc: "TTSnap downloader is a web tool that allows users to input a valid TikTok URL and download the video without the TikTok watermark or audio from it.",
-      skills: ["NextJS", "Tailwind CSS", "Typescript", "Vercel", "Git"],
-
+      title: "TTSnap",
+      desc: "TTSnap is a collection of web-based tools built with NextJS 13, Tailwind CSS and TypeScript with server-side rendering.",
+      skills: ["NextJS", "Tailwind CSS", "TypeScript", "Vercel", "Git"],
       imageSrc: TTSnapImage,
+      url: "https://www.ttsnap.net",
     },
     {
       id: 2,
       title: "JustOnlineTools",
-      desc: "JustOnlineTools is a collection of web based tech related tools, for all tools everything is rendered on client side. As of now, it consists on Digital Clock, Timer, Analog Clock and Tally Counter ",
+      desc: "JustOnlineTools is a collection of web-based tools everything built with ReactJS and Material UI with client-side rendering.",
       skills: [
         "Material UI",
         "React",
         "React Context",
-        "Javascript",
+        "JavaScript",
         "Vercel",
         "Git",
       ],
       imageSrc: JOTImage,
+      url: "https://www.justonlinetools.com",
     },
     {
       id: 3,
       title: "Express API Server",
-      desc: "Express Server that provides the server side logic for all the projects that I create, as of now it is being used by TTSnap Downloader. ",
+      desc: "Express Server that provides the server-side logic for all the tools and app, deployed in Ubuntu in AWS EC2 instance ",
       skills: [
         "NodeJS",
         "Express",
-        "Javascript",
+        "JavaScript",
         "AWS EC2",
         "SSL",
         "SQLite",
@@ -44,13 +45,14 @@ export default function ProjectsSection() {
         "Nginx",
       ],
       imageSrc: ExpressImage,
+      url: "https://expressapi.ttsnap.net",
     },
   ];
   return (
     <section className='mb-6 px-8 sm:px-4 py-4 rounded-md '>
       <div className='flex flex-col mb-6'>
         <div className='flex gap-2 items-center mb-2 justify-center'>
-          <h2 className='text-xl sm:text-3xl '>My Projects</h2>
+          <h2 className='text-2xl sm:text-3xl '>My Projects</h2>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
@@ -65,7 +67,7 @@ export default function ProjectsSection() {
             />
           </svg>
         </div>
-        <span className='block mx-auto transition-all duration-300 h-1 bg-secondary w-1/12'></span>
+        <span className='block mx-auto transition-all duration-300 h-1 bg-tertiary w-1/12'></span>
       </div>
       <div className='flex flex-col gap-10 '>
         {projectDetails.map((project) => (
@@ -75,6 +77,7 @@ export default function ProjectsSection() {
             description={project.desc}
             skills={project.skills}
             imageSrc={project.imageSrc}
+            url={project.url}
           />
         ))}
       </div>

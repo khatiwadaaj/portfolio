@@ -7,6 +7,7 @@ import TechStackInfo from "./components/TechStackInfo";
 import ExperienceInfo from "./components/ExperienceInfo";
 import Header from "./components/Header";
 import SideNavBar from "./components/SideNavBar";
+import BacktoTopButton from "./components/BacktoTopButton";
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
         <ProjectsSection />
         <TechStackInfo />
         {/* <ExperienceInfo /> */}
-        <SocialContact />
+        {/* <SocialContact /> */}
         <Footer />
+        <BacktoTopButton />
       </div>
     </div>
   );

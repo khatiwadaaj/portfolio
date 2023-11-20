@@ -20,7 +20,7 @@ export default function TechStackInfo() {
   const TechStackArray = [
     {
       id: 1,
-      title: "Javascript",
+      title: "JavaScript",
       imageSrc: JSIcon,
     },
     {
@@ -35,7 +35,7 @@ export default function TechStackInfo() {
     },
     {
       id: 4,
-      title: "TailwindCSS",
+      title: "Tailwind CSS",
       imageSrc: TailwindIcon,
     },
     {
@@ -73,7 +73,7 @@ export default function TechStackInfo() {
     <section className='mb-6 px-8 sm:px-4 py-2'>
       <div className='flex flex-col mb-10'>
         <div className='flex gap-2 mb-2 items-center justify-center'>
-          <h2 className='text-xl sm:text-3xl'>Tech Stack</h2>
+          <h2 className='text-2xl sm:text-3xl'>Tech Stack</h2>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
@@ -88,7 +88,7 @@ export default function TechStackInfo() {
             />
           </svg>
         </div>
-        <span className='block mx-auto transition-all duration-300 h-1 bg-secondary w-1/12'></span>
+        <span className='block mx-auto transition-all duration-300 h-1 bg-tertiary w-1/12'></span>
       </div>
       <div className='flex flex-wrap justify-center gap-6 sm:gap-10 mt-5'>
         {TechStackArray.map((item) => (
@@ -99,9 +99,9 @@ export default function TechStackInfo() {
               unoptimized
               src={item.imageSrc}
               alt='Github Link'
-              className='h-30 w-20'
+              className='h-20 w-20'
             />
-            <h2 className='text-md sm:text-lg mt-2'>{item.title}</h2>
+            <h2 className='text-sm sm:text-lg mt-2'>{item.title}</h2>
           </div>
         ))}
       </div>
